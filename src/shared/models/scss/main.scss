@@ -1,0 +1,212 @@
+@import './null.scss';
+@import '../../../../node_modules/bootstrap/dist/css/bootstrap.css';
+
+$fontFamaliMontserrat: "Montserrat", sans-serif;
+
+*{
+    font-family: $fontFamaliMontserrat;
+    font-size: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+  flex: 1;
+}
+
+.header-container, ._conteiner{
+    width: 1000px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px,;
+    margin: 0 auto;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+
+.header__content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo{
+    margin-left: 100px;
+    width: 200px;
+    height: 150px;
+}
+
+.header__menu{
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+}
+
+.menu__list-element{
+    margin-right: 30px;
+    align-self: center;
+
+    a{
+        font-family: $fontFamaliMontserrat;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .btn{
+        transition: all 1s ease;
+        border: none;
+        
+        &:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+    }
+}
+
+.castom{
+    width: 900px;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .contacts-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .contact-item {
+      flex-direction: row;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .contact-icon {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .bio {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .skill-item {
+    margin: 10px 0;
+  }
+
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .profile-picture {
+      width: 200px;
+      height: 200px;
+    }
+
+    .bio {
+      text-align: left;
+    }
+
+    .skills {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .skill-item {
+      margin: 10px 20px;
+    }
+  }
+
+.content{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:stretch
+}
+
+.castom-not-found{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 45vh;
+}
+
+.error-page{
+  display: flex;
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 1s ease;
+
+  transform: translate(0, 100%);
+
+  &:hover{
+    background-color:darkgreen;
+  }
+}
+
+.error-link{
+  color: white;
+}
