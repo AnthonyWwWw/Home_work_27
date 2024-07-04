@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getImageUrl } from '../feature/URL/utility'
+import { getImageUrl } from '../feature/URLutility/utility'
 
 export function useStateImg() {
     const [logoState, useLogoState] =  useState();
