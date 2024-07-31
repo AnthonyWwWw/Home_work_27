@@ -1,16 +1,16 @@
 import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../feature/ChangeColor/ChangeColor';
 import FormAddNewTask from '../widget/FormAddNewTask';
-import { addNewTask } from '../feature/AddNewTask/addNewTask';
 import NewTask from '../widget/NewTask';
 
 function Main() {
     const { theme } = useContext(ThemeContext);
-    const [tasks, setTasks] = useState(addNewTask());
+    const [tasks, setTasks] = useState([]);
 
     const handleAddTask = (newTask) => {
-        const updatedTasks = addNewTask(newTask);
-        setTasks([...updatedTasks]);
+        if(newTask){
+            setTasks([...tasks, newTask]);
+        }
     };
 
     return (

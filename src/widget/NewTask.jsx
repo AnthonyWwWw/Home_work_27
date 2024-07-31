@@ -7,8 +7,8 @@ function NewTask(props) {
             <td>{children}</td>
             <td>In progress</td>
             <td>
-                <button type='submit' data-mdb-button-init data-mdb-ripple-init className='btn btn-danger'>Delete</button>
-                <button type='submit' data-mdb-button-init data-mdb-ripple-init className='btn btn-success ms-1'>Finished</button>
+                <button type='submit' className='btn btn-danger'>Delete</button>
+                <button type='submit' className='btn btn-success ms-1'>Finished</button>
             </td>
         </tr>
     );

@@ -10,7 +10,11 @@ function AboutMi() {
                 <div className='about-container'>
                     <div className='bio'>
                         <h2>About Me</h2>
-                        <p>Hello! I'm John Doe, a passionate web developer with over 5 years of experience in building responsive and user-friendly websites. I have a strong background in HTML, CSS, JavaScript, and various modern web frameworks. I enjoy solving complex problems and continuously learning new technologies to improve my skills.</p>
+                        <p> 
+                            Hello! I'm John Doe, a passionate web developer with over 5 years of experience in building 
+                            responsive and user-friendly websites. I have a strong background in HTML, CSS, JavaScript, 
+                            and various modern web frameworks. I enjoy solving complex problems and continuously learning new technologies to improve my skills.
+                        </p>
                     </div>
                 </div>
                 <div className='skills'>

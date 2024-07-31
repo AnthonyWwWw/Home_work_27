@@ -4,8 +4,7 @@ import Contact from '../pages/Contacts.jsx';
 import { routes } from '../shared/config/routes.js';
 import Header from '../widget/Header.jsx';
 import Footer from '../widget/Footer.jsx'
-import { ThemeProvider, themes } from '../feature/ChangeColor/ChangeColor.jsx';
-import AboutMi from '../pages/AboutMi.jsx';
+import { ThemeProvider } from '../feature/ChangeColor/ChangeColor.jsx';
 import NotFound from '../pages/NotFound.jsx';
 import ErrorBoundary from '../feature/ErrorBoundary/ErrorProps.jsx';
 
